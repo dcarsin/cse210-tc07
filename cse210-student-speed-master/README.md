@@ -39,5 +39,6 @@ root                    (project root folder)
 * Asciimatics 1.12.0
 
 ## Authors
+David Carsin
 ---
 * # TODO: Add names and emails here
