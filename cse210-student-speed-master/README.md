@@ -41,5 +41,7 @@ root                    (project root folder)
 ## Authors
 David Carsin
 Tamara Meisman  - tamara@meisman.us
+Brian Lewis - 1808ub@gmail.com
+
 ---
 * # TODO: Add names and emails here
