@@ -42,3 +42,4 @@ root                    (project root folder)
 David Carsin
 ---
 * # TODO: Add names and emails here
+Federico Pregnolato - pre13009@byui.edu
