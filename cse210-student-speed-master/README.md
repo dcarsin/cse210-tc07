@@ -40,5 +40,6 @@ root                    (project root folder)
 
 ## Authors
 David Carsin
+Tamara Meisman  - tamara@meisman.us
 ---
 * # TODO: Add names and emails here
