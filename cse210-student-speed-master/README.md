@@ -39,7 +39,13 @@ root                    (project root folder)
 * Asciimatics 1.12.0
 
 ## Authors
+David Carsin
+Tamara Meisman  - tamara@meisman.us
+Brian Lewis - 1808ub@gmail.com
+
 ---
 * # TODO: Add names and emails here
+
 Brian C Lewis - 1808ub@gmail.com
+Federico Pregnolato - pre13009@byui.edu
 
