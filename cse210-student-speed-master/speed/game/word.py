@@ -9,8 +9,8 @@ class Word(Actor):
         """ Class constructor
 
             Args:
-
-            _points (int): stores the count of points for the food
+                _word (string): stores the random word chosen from the list
+                _points (int): stores the count of points for the food
         """
         super().__init__()
         self._points = 0
@@ -18,11 +18,19 @@ class Word(Actor):
         self.reset()
         
     def get_points(self):
-        """ Method that returns the points """
+        """ Method that returns the points 
+
+            Args:
+                self (Word): an instance of word.
+        """
         return self._points
 
     def reset(self):
-        """ Description here """
+        """ Reset the word after it has been typed correctly by the user.
+        
+            Args:
+                self (Word): an instance of word.
+        """
 
         self._word = random.choice(constants.LIBRARY)
         self._points = len(self._word)
@@ -35,5 +43,9 @@ class Word(Actor):
         self.set_velocity(velocity)
 
     def get_word(self):
-        """ Description here """
+        """ Returns the word.
+        
+            Args:
+                self (Word): an instance of word.
+        """
         return self._word

@@ -61,7 +61,7 @@ class Director:
 
     def _do_updates(self):
         """Updates the important game information for each round of play. In 
-        this case, that means checking for a collision and updating the score.
+        this case, that means checking if the word typed matched one on the screen.
 
         Args:
             self (Director): An instance of Director.
@@ -82,7 +82,7 @@ class Director:
         self._output_service.flush_buffer()
 
     def _check_word_typed(self):
-        """Checkes if the characters typed correspond to the word. Updates the score and creates a new word.
+        """Checks if the characters typed correspond to the word. Updates the score and creates a new word.
 
         Args:
             self (Director): An instance of Director.
@@ -95,7 +95,11 @@ class Director:
                 break
      
     def _populate_words(self):
-        """Description here"""
+        """Creates as many Word objects as requested from the user.
+
+        Args:
+            self (Director): An instance of Director.
+        """
         
         for _ in range(constants.STARTING_WORDS):
             self._word = Word()
