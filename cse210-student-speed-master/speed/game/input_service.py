@@ -2,7 +2,7 @@ import sys
 from asciimatics.event import KeyboardEvent
 
 class InputService:
-    """Detects player input. The responsibility of the class of objects is to detect player keypresses and translate them into a point representing a direction (or velocity).
+    """Detects player input. The responsibility of the class of objects is to detect player keypresses and translate them into a letter.
 
     Stereotype: 
         Service Provider
@@ -19,7 +19,7 @@ class InputService:
         """
         self._screen = screen
         
-    def get_letter(self):
+    def get_letter(self, buffer = None):
         """Gets the letter that was typed. If the enter key was pressed returns an asterisk.
 
         Args:
@@ -31,10 +31,10 @@ class InputService:
         result = ""
         event = self._screen.get_key()
         if not event is None:
-            if event == 27:
+            if event == -1:
                 sys.exit()
-            elif event == 10: 
-                result = "*"
+            elif event == 10 and buffer != None: 
+                buffer.clear_buffer()
             elif event >= 97 and event <= 122: 
                 result = chr(event)
         return result
